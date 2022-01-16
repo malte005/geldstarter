@@ -1,16 +1,21 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Was erwartet mich hier?
+subtitle: Wenn du neu hier bist, gebe ich dir hier Einblicke zu mir und den behandelten Themen.
+published: true
 ---
 
-My name is Inigo Montoya. I have the following qualities:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- Wer bin ich?
+- Wie kam ich zum Investieren?
+- Warum blogge ich?
+- Worüber blogge ich?
+	
+Depotupdate, Ziele, Finanzplanung, Investmentmöglichkeiten, Learnings, Community Fragen/Themen
 
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+📖| Blog für finanzielle Bildung
+💰| Finanzen für Berufsstarter
+🚀| Mindset und Philosophie zur Geldanlage
+🧑‍💻| Malte, 29, IT-Berater
+🎯| Ziel: langfristiger Vermögensaufbau
+🛑| keine Anlageberatung/ -empfehlung

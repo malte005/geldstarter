@@ -11,16 +11,39 @@
         </div>
       {% endif %}
       <p class="copyright text-muted">
+    
       {% if site.author %}
-        {{ site.author }}
+      &copy {{ site.author }}
         &nbsp;&bull;&nbsp;
       {% endif %}
-      {{ site.time | date: '%Y' }}
 
-      {% if site.url-pretty %}
+      {{ site.time | date: '%Y' }}
+      <br>
+
+      {% if site.impress %}
+          <span class="author-site">
+          <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ 'impress' | absolute_url }}{% endif %}">{{ site.impress }}</a>
+        </span>
+      {% endif %}
+
+      {% if site.contact %}
         &nbsp;&bull;&nbsp;
         <span class="author-site">
-          <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ '' | absolute_url }}{% endif %}">{{ site.url-pretty }}</a>
+          <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ 'contact' | absolute_url }}{% endif %}">{{ site.contact }}</a>
+        </span>
+      {% endif %}
+
+      {% if site.dataprotection %}
+        &nbsp;&bull;&nbsp;
+        <span class="author-site">
+          <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ 'dataprotection' | absolute_url }}{% endif %}">{{ site.dataprotection }}</a>
+        </span>
+      {% endif %}
+      
+      {% if site.url-pretty %}
+        <br>
+        <span class="author-site">
+          <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ 'https://linktr.ee/Geldstarter' | absolute_url }}{% endif %}"  target="_blank"><b>{{ site.url-pretty}}</b></a>
         </span>
       {% endif %}
 
@@ -31,11 +54,8 @@
         {% endif %}
       {% endif%}
       </p>
-      {% unless site.remove-ads %}<p class="theme-by text-muted">
-        Powered by
-        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
-      </p>{% endunless %}
       </div>
     </div>
   </div>
+  
 </footer>
